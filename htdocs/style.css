@@ -1,0 +1,729 @@
+header{
+  position: static;
+  top:3px;
+  background-color: #333;
+  color:#000000;
+  padding:8px;
+}
+
+body {
+    background-color: #333; 
+    color: #FFFFFF;
+}
+
+h1 { 
+    background-color: yellow; 
+    color: #E6E6FA;
+    line-height: 200%;
+    font-family: 'Times New Roman',Georgia, Arial; 
+    text-shadow: 3px 3px 5px #CCCCCC;
+}
+
+h2 {  
+  font-family: 'Times New Roman',Georgia, Arial; 
+  text-align:center;
+  color:white;
+  font-style: italic;
+}
+
+.nav {
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 2px;
+  margin-left:50px;
+  margin-right:50px;
+  color:white;
+}
+
+.navopt{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.90em; 
+  font-weight: bold;
+  width: 15%;
+  height:auto;
+  color: white;
+  background-color:#747779;
+  border-width: 5px;
+  border-style: outset;
+  border-color:white;
+  border-radius: 0.3em;
+  padding: 8px 3px 8px 3px;
+  margin:5px;
+}
+
+.navopt:hover{
+  background-color: rgb(78, 78, 78);
+  border-color:yellow;
+}
+
+a {
+  text-decoration:none;
+  color:yellow;
+}
+
+/* Logo */
+.logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 8px;
+  border-width: 2px;
+  border-style: outset;
+  border-color:white;
+  border-radius: .3em;
+}
+
+.logo:hover{
+  border-color:yellow;
+  opacity: 0.8;
+}
+
+/* Profile */
+.profile{
+  width: 40px;
+  height: 40px;
+  float:right;
+  margin-top: 8px;
+  border-width: 2px;
+  border-style: outset;
+  border-color:white;
+  border-radius: .3em;
+  }
+
+.profile:hover{
+  border-color:yellow;
+  opacity: 0.8;
+}
+
+.href{
+  padding:10px;
+  color:yellow;
+}
+
+.href:hover{
+  color:#b7d317;
+}
+
+.special_padding{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.soul_red{
+  color: #F70D1A;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Footer (Site Map) */
+.footer_LS {
+  margin-top: 30px;
+  background-color: #333;
+  color: #ffffff; 
+  font-size: 13px; 
+  font-style: italic;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: #404240;
+  color: #ffffff; 
+  font-size: 13px; 
+  font-style: italic;
+  text-align: center;
+}
+
+.table_f{
+  table-layout: fixed ;
+  width: 100% ;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-color:yellow;
+}
+
+.site{
+  padding:10px;
+} 
+
+.site_N{
+  text-align: center;
+
+}
+
+.site_N:hover{
+  font-size: 25px;
+  color:#fffb8f;
+}
+
+.site_T{
+  text-align: left;
+}
+
+.site_P{
+  text-align: left;
+}
+
+.site_P:hover{
+  font-size: 15px;
+  color:#fffb8f;
+}
+
+HR{
+  border-width: 1px;
+  border-style: ridge;
+  border-color:yellow;
+}
+
+.logo_F{
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Home Page */
+.product_details{
+    text-align:center;
+}
+
+.slideshow{
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: yellow;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(138, 138, 138, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px 20px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: yellow;
+}
+
+.home_img{
+  width: 50%;
+  height:550px;
+  padding-left: 25%;
+  padding-top: 30px;
+}
+
+.new{
+  position:absolute;
+  width:200px;
+  height:100px;
+  float:left;
+}
+
+.promo{
+  position:absolute;
+  width:160px;
+  height:120px;
+  float:left;
+}
+/* -------------------------------------------------------------------------- */
+/* Product Page */
+.all_product_con{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
+  margin: 10px;
+}
+
+.product_con{
+  border-width: 2px;
+  border-style: ridge;
+  border-color:yellow;
+  width: auto;
+  height: 300px;
+  margin: 10px;
+}
+
+.product_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
+.product_img:hover{
+  opacity: 0.6;
+}
+
+.p_name{
+  height: 220px;
+}
+
+.p_name:hover{
+  color:yellow;
+}
+
+.padd_con{
+  text-align: center;
+}
+
+.add-btn {
+  width: 360px;
+  height: 30px;
+  color: white;
+  background-color: #747779;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: #909497;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Product Details Page */
+.pslide_con{
+  border-width: 5px;
+  border-style: groove;
+  border-color:yellow;
+}
+
+.pdetails{
+  margin-top: 10px;
+  border-width: 5px;
+  border-style: groove;
+  border-color: yellow;
+  }
+
+.pquantity{
+  padding:10px;
+  text-align:center;  
+}
+
+.Spec{
+  text-align: center;
+  border-bottom: 2px ridge yellow;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.bck-btn{
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: #747779;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.bck-btn:hover{
+  background-color: #909497;
+  cursor: pointer;
+}
+
+ul{
+  text-align: center;
+  list-style: none;
+}
+/* -------------------------------------------------------------------------- */
+/* Contact Page */
+.customer_img{
+  display: block;
+  width:50%;
+  height:50%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.icon{
+  display: block;
+  width:20%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/* -------------------------------------------------------------------------- */
+/* Shopping Cart*/
+.Cart_Con{
+  margin: 0 20px;
+}
+
+.Pro_D{
+  display: flex;
+  padding: 20px;
+  border-bottom: 2px ridge yellow;
+  margin-bottom: 10px;
+}
+
+.cart_details{
+  margin-left: 60px;
+  text-align: left;
+}
+
+.cart_price{
+  margin-left: 60px;
+  text-align: left;
+}
+
+.cartp_img{
+  display: block;
+  width:250px;
+  height:200px;
+  padding: 10px;
+  border-width: 2px;
+  border-style: ridge;
+  border-color:yellow;
+  margin-top: 45px;
+}
+
+.cart_quantity{
+  margin: 0 0 15px 20px;
+  display: flex;
+}
+
+.mquan_btn{
+  height: 25px;
+  width: 30px;
+  color: white;
+  background-color: #747779;
+  border: none;
+  border-radius: .3em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3px;
+  margin-left: 40px;
+}
+
+.mquan_btn:hover{
+  background-color: #909497;
+  cursor: pointer;
+}
+
+.pquan_btn{
+  height: 25px;
+  width: 30px;
+  color: white;
+  background-color: #747779;
+  border: none;
+  border-radius: .3em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.pquan_btn:hover{
+  background-color: #909497;
+  cursor: pointer;
+}
+
+.cart_input {
+  height: 30px;
+  width: 100px;
+  border: 1px solid #747779;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.remove_btn {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: #747779;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.remove_btn:hover {
+  background-color: #CC4C4C;
+  cursor: pointer;
+}
+
+.checkout{
+  text-align:right;
+  padding:10px;
+}
+
+.checkout_btn {
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: #747779;
+  border: 2px solid #000000;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-left:20px;
+}
+
+.checkout_btn:hover {
+  background-color: #909497;
+  border-color: yellow;
+  cursor: pointer;
+}
+
+/* Shopping Cart Guest Mode */
+.Cart_Guest{
+  border-width: 5px;
+  border-style: groove;
+  border-color:yellow;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Payment Page */
+.logop {
+  display: block;
+  width: 250px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12px;
+  }
+
+.UD{
+  border-bottom: 2px ridge yellow;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.profile_PT{
+  border-width: 5px;
+  border-style: groove;
+  border-color:yellow;
+}
+
+.profile_Pimg{
+  display: block;
+  width:200px;
+  padding:10px;
+  margin:10px;
+}
+
+.text_P{
+  margin-left: 40px;
+}
+
+.pp_details{
+  margin-left:50px;
+  text-align: left;
+}
+
+.p_img{
+  width:150px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.price{
+  text-align: right;
+  padding:10px;
+}
+
+.saved{
+  text-align: right;
+  padding:10px;
+}
+
+.fit{
+  table-layout: auto;
+  width: 100%;
+}
+
+.decision{
+  text-align: right;
+  padding:10px;
+}
+
+.cancel_btn {
+  height: 30px;
+  width: 150px;
+  color: white;
+  background-color: #747779;
+  border: 2px solid #000000;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-top:10px;
+  float:left
+}
+
+.cancel_btn:hover {
+  background-color: #909497;
+  border-color: #FF0000;
+}
+
+.pay_btn {
+  height: 30px;
+  width: 150px;
+  color: white;
+  background-color: #747779;
+  border: 2px solid #000000;
+  border-radius: .3em;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+.pay_btn:hover {
+  background-color: #909497;
+  border-color: yellow;
+}
+
+.ETA{
+  padding:10px;
+  margin: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* About Us */
+.about_img{
+  display: block;
+  width:500px;
+  height:500px;
+  padding: 10px;
+  margin:10px;
+  }
+
+/* -------------------------------------------------------------------------- */
+/* Login Page */
+.Login_logo{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10%;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 10px;
+  }
+
+.Login_password{
+  border-width: 2px;
+  border-style: solid;
+  border-color:yellow;
+  text-align:center;
+  margin-left: 30%;
+  margin-right: 30%;
+  }
+
+.password{
+  border-width: 2px;
+  border-style: solid;
+  border-color:#000000;
+  text-align:center;
+  }
+
+.login_btn{
+  width: 200px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px;
+}
+
+.login_btn:hover {
+  background-color: #909497;
+  border-color: yellow;
+}
+
+/* -------------------------------------------------------------------------- */
+/* SignUp Page */
+.signup_con{
+  border-width: 2px;
+  border-style: solid;
+  border-color:yellow;
+  text-align:center;
+  margin-left: 30%;
+  margin-right: 30%;
+  }
+
+.signup_btn{
+  width: 200px;
+  border: 2px solid;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.signup_btn:hover {
+  background-color: #909497;
+  border-color: yellow;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Profile Page */
+.profile_img{
+  display: block;
+  width:500px;
+  padding: 10px;
+  margin:10px;
+  }
+
+.logout_btn{
+  width: 200px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  color: #000000;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.logout_btn:hover {
+  background-color: #909497;
+  border-color: yellow;
+}
+
+
+
