@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Login</title>
+<link rel="shortcut icon" href="../t-zr-logos/t-logos.jpeg" sizes="32x32" type="image/png">
+<meta charset = "utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>	
+
+    <img class= "Login_logo" src="../t-zr-logos/t-zr-logos.jpeg"  alt="Logo">
+
+<BR>
+    <h2>Welcome To Techizer</h2>
+<BR>
+<div class ="Login_password">
+    <form action="login_action.php" method="POST">
+        <h3>Username:</h3>
+        <input type="text" name= "Username" placeholder="Username" required/>
+        <h3>Password:</h3>
+        <input type="password" name= "Password" placeholder="Password" required/>
+
+        <div class="special_padding">
+        <a href = "../index.html" class="href">Continue as Guest</a>
+        <a href = "signup.html" class="href">SignUp</a>
+        </div>
+
+        <input class="login_btn" type="submit" name="login" value="Log In">    
+    </form>
+</div>  
+
+<footer class="footer_LS">
+	<small>Copyright &copy; 2021 Techizer Sdn Bhd</small>
+</footer>
+</body>
+</html>

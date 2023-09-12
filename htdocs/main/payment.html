@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Payment</title>
+<link rel="shortcut icon" href="../t-zr-logos/t-logos.jpeg" sizes="32x32" type="image/png">
+<meta charset = "utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+<script src = "product.js" async></script>
+<script src = "payment.js" async></script>
+</head>
+<body>	
+    <header>
+        <a href="Homepage.html"><img class= "logop" src="../t-zr-logos/tzr-logos.jpeg"  alt="Logo"></a>
+    </header>
+    
+<h2>Payment</h2> 
+<BR>
+
+<div class="profile_PT">
+    <table>
+        <h2 class="UD">User Details</h2>
+        <tr>
+            <td rowspan="7">	
+                <img class ="profile_Pimg" src="../profile/Marshmello.jpg"  alt="Customer">
+            </td>
+            <tr>
+                <td><h3>Name:<BR>Gui Rui Ming</h3></td>
+            </tr>
+            <tr>
+                <td><h3>Username:<BR>mellowafterdark</h3></td>
+            </tr> 
+            <tr>
+                <td><h3>Email:<BR>mellowa45s@gmail.com</h3></td>
+            </tr> 
+            <tr>
+                <td><h3>Phone Number:<BR>+60 134983766</h3></td>
+            </tr> 
+            <tr>
+                <td><h3>Address:<BR>No.5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor</h3></td>
+            </tr>    
+    </table>
+
+    <HR>
+
+    <div class="ETA">
+        <h3>Order ID: BX0974212</h3>
+        <h3>Order Date: <span id="date"></span></h3>
+        <h3>Order Time: <span id="time"></span></h3>
+        
+        <script>
+        var dt = new Date();
+        document.getElementById("date").innerHTML = dt.toLocaleDateString();
+        </script>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+        </script>
+    </div>
+
+    <HR>
+
+    <table class="fit">
+
+    </table>
+
+    <HR>
+
+    <div class="price">
+
+    </div>
+    <div class="saved">
+
+    </div>
+</div>
+
+<div class="decision">
+    <button class="cancel_btn " type="button" onclick="window.location.href = 'Product.html#cart'" value="Pay">Cancel</button>
+    <button class="pay_btn " type="button" onclick="checkout()">Place Order</button>
+</div>
+
+<script>
+    function checkout(){
+        window.alert("Thank You for your purchase with Techizer. An email will be sent to you shortly.");
+		window.location.href = 'Homepage.html';
+    }
+</script>
+
+<footer class="footer">
+    <table class="table_f">
+        <tr>
+            <td class="site">
+                <ul>
+                <li><h2><a class="site_N" href="Homepage.html">Home</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html">Product</a></h2></li>
+                <li><h2><a class="site_N" href="Contact.html">Contact</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html#cart">Shopping Cart</a></h2></li>
+                <li><h2><a class="site_N" href="About_Us.html">About Us</a></h2></li>
+                <li><h2><a class="site_N" href="Profile.html">Profile</a></h2></li>
+                </ul>
+            </td>
+
+            <td class="site">
+                <h2 class="site_T">Community</h2>
+                <a href="https://www.facebook.com/"><p class="site_P">Facebook</p></a>
+                <a href="https://www.instagram.com/"><p class="site_P">Instagram</p></a>
+                <BR>
+                <HR>
+                <BR>
+                <h2 class="site_T">Customer Service</h2>
+                <p class="site_T">1800 812 2486</p>
+                <p class="site_T">Techizer@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+    <BR>
+    <img class= "logo_F" src="../t-zr-logos/tzr-logos.jpeg"  alt="Logo">
+	<small>Copyright &copy; 2021 Techizer Sdn Bhd</small>
+</footer>
+</body>
+</html>

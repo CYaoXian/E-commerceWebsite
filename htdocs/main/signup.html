@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Sign Up</title>
+<link rel="shortcut icon" href="../t-zr-logos/t-logos.jpeg" sizes="32x32" type="image/png">
+<meta charset = "utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>	
+    <img class= "Login_logo" src="../t-zr-logos/t-zr-logos.jpeg"  alt="Logo">
+    <br>
+    <h2>Welcome To Techizer</h2>
+<BR>
+<div class ="signup_con">
+    <form action="signup_action.php" method="POST">
+        <h4>Name:</h4>
+        <input type="text" name = "Name" placeholder="Name" required/>
+        <h3>Username:</h3>
+        <input type="text" name = "Username" placeholder="Username" required/>
+        <h3>Email:</h3>
+        <input type="email" name = "Email" placeholder="Email" required/>
+        <h3>Phone Number:</h3>
+        <input type="text" name = "Phone_Number" placeholder="Phone Number" required/>
+        <h3>Address:</h3>
+        <input type="text" name = "Address" placeholder="Address" required/>
+        <h3>Password:</h3>
+        <input type="password" name = "Password" placeholder="Password" required/>
+        <h3>Confirm Password:</h3>
+        <input type="password" name = "Confirm_Password" placeholder="Confirm Password" required/>
+        <BR>
+        
+        <div class="special_padding">
+        <a href = "Login.html" class="href">Already a member? Log In</a>
+        </div>
+
+        <input class="signup_btn" type="submit" name="btn" value="SignUp">
+    </form>
+</div>  
+    
+
+<footer class="footer_LS">
+	<small>Copyright &copy; 2021 Techizer Sdn Bhd</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>ASUS ROG Zephyrus G15</title>
+<link rel="shortcut icon" href="../t-zr-logos/t-logos.jpeg" sizes="32x32" type="image/png">
+<meta charset = "utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>	
+<header>
+    <a href="Homepage.html"><img class= "logo" src="../t-zr-logos/t-logos.jpeg"  alt="Logo"></a>
+    <a href="Profile.html"><img class= "profile" src="../profile/Marshmello.jpg"  alt="Profile"></a>    <nav class="nav">
+        <a class="navopt" href = "Homepage.html">Home</a> &nbsp;
+        <a class="navopt" href = "Product.html">Product</a> &nbsp;
+        <a class="navopt" href = "Contact.html">Contact</a> &nbsp;
+        <a class="navopt" href = "Product.html#cart">Shopping Cart</a> &nbsp;
+        <a class="navopt" href = "About_Us.html">About Us</a>
+    </nav>
+</header>
+
+<BR>
+    <h2>ASUS ROG Zephyrus G15</h2> 
+<BR>
+
+<div class="pslide_con">
+	<div class="slideshow">
+        <div class="show">
+            <img class = "home_img" src="../product/Zephyrus/1.png" alt="Image 1">
+        </div>
+        <div class="show">
+            <img class = "home_img" src="../product/Zephyrus/2.png" alt="Image 2">     
+        </div>
+        <div class="show">
+            <img class = "home_img" src="../product/Zephyrus/3.png" alt="Image 3">     
+        </div>
+        <div class="show">
+            <img class = "home_img" src="../product/Zephyrus/4.png" alt="Image 4">
+        </div>
+        <div class="show">
+            <img class = "home_img" src="../product/Zephyrus/5.png" alt="Image 5">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <BR>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("show");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</div>
+
+
+<div class ="pdetails">
+    <h2 class="Spec">Specification Details</h2>
+    <ul>
+        <li>AMD Ryzen 7 (R7-4800HS)</li>
+        <li>Windows 10 Home</li>
+        <li>GTX 1660Ti Max-Q 6GB</li>
+        <li>8GB*2 DDR4 RAM</li>
+        <li>PCIE NVME 1TB M.2 SSD</li>
+        <li>15.6” FHD IPS 144Hz</li>
+      </ul>  
+
+    <div class="pquantity">
+        <h3 class ="P_price">Original Price: RM5,299.00</h3>
+        <h3 class ="P_price">Discount Price: RM5,099.00</h3>
+        <button class="bck-btn" type="button" onclick="window.location.href = 'product.html'">Back</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <table class="table_f">
+        <tr>
+            <td class="site">
+                <ul>
+                <li><h2><a class="site_N" href="Homepage.html">Home</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html">Product</a></h2></li>
+                <li><h2><a class="site_N" href="Contact.html">Contact</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html#cart">Shopping Cart</a></h2></li>
+                <li><h2><a class="site_N" href="About_Us.html">About Us</a></h2></li>
+                <li><h2><a class="site_N" href="Profile.html">Profile</a></h2></li>
+                </ul>
+            </td>
+
+            <td class="site">
+                <h2 class="site_T">Community</h2>
+                <a href="https://www.facebook.com/"><p class="site_P">Facebook</p></a>
+                <a href="https://www.instagram.com/"><p class="site_P">Instagram</p></a>
+                <BR>
+                <HR>
+                <BR>
+                <h2 class="site_T">Customer Service</h2>
+                <p class="site_T">1800 812 486</p>
+                <p class="site_T">Techizer@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+    <BR>
+    <img class= "logo_F" src="../t-zr-logos/tzr-logos.jpeg"  alt="Logo">
+	<small>Copyright &copy; 2021 Techizer Sdn Bhd</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Techizer</title>
+<link rel="shortcut icon" href="../t-zr-logos/t-logos.jpeg" sizes="32x32" type="image/png">
+<meta charset = "utf-8">
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>	
+<header>
+	<a href="Homepage.html"><img class= "logo" src="../t-zr-logos/t-logos.jpeg"  alt="Logo"></a>
+    <a href="Profile.html"><img class= "profile" src="../profile/Marshmello.jpg"  alt="Profile"></a>
+    <nav class="nav">
+        <a class="navopt" href = "Homepage.html">Home</a> &nbsp;
+        <a class="navopt" href = "Product.html">Product</a> &nbsp;
+        <a class="navopt" href = "Contact.html">Contact</a> &nbsp;
+        <a class="navopt" href = "Product.html#cart">Shopping Cart</a> &nbsp;
+        <a class="navopt" href = "About_Us.html">About Us</a>
+    </nav>
+</header>
+<HR>
+
+<div class="slideshow">
+    <div class="show">
+        <a href="P5.html">
+        <img class = "new" src="../t-zr-logos/NewArrival.png" alt="New Arrival">
+        <img class = "home_img" src="../product/MacbookPro/1.png" alt="Product 5"><h3 class="product_details">Macbook Pro</h3>
+        </a>
+    </div>
+    <div class="show">
+        <a href="P2.html">
+        <img class = "new" src="../t-zr-logos/NewArrival.png" alt="New Arrival">
+        <img class = "home_img" src="../product/Legion/1.png" alt="Product 2"><h3 class="product_details">Lenovo Legion 7i</h3>
+        </a>        
+    </div>
+    <div class="show">
+        <a href="P3.html">
+        <img class = "new" src="../t-zr-logos/NewArrival.png" alt="New Arrival">
+        <img class = "home_img" src="../product/MSI/1.png" alt="Product 3"><h3 class="product_details">MSI WS75 Mobile Workstation</h3>
+        </a>        
+    </div>
+    <div class="show">
+        <a href="P4.html">
+        <img class = "promo" src="../t-zr-logos/promotion.png" alt="Promotion">
+        <img class = "home_img" src="../product/Zephyrus/1.png" alt="Product 4"><h3 class="product_details">ASUS ROG Zephyrus G15</h3>
+        </a>
+    </div>
+    <div class="show">
+        <a href="P1.html">
+        <img class = "promo" src="../t-zr-logos/promotion.png" alt="Promotion"> 
+        <img class = "home_img" src="../product/zbook/1.png" alt="Product 1"><h3 class="product_details">HP ZBook Firefly 15 G7 Mobile Workstation</h3>
+        </a>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+    <BR>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("show");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</div>
+
+<footer class="footer">
+    <table class="table_f">
+        <tr>
+            <td class="site">
+                <ul>
+                <li><h2><a class="site_N" href="Homepage.html">Home</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html">Product</a></h2></li>
+                <li><h2><a class="site_N" href="Contact.html">Contact</a></h2></li>
+                <li><h2><a class="site_N" href="Product.html#cart">Shopping Cart</a></h2></li>
+                <li><h2><a class="site_N" href="About_Us.html">About Us</a></h2></li>
+                <li><h2><a class="site_N" href="Profile.html">Profile</a></h2></li>
+                </ul>
+            </td>
+
+            <td class="site">
+                <h2 class="site_T">Community</h2>
+                <a href="https://www.facebook.com/"><p class="site_P">Facebook</p></a>
+                <a href="https://www.instagram.com/"><p class="site_P">Instagram</p></a>
+                <BR>
+                <HR>
+                <BR>
+                <h2 class="site_T">Customer Service</h2>
+                <p class="site_T">1800 812 486</p>
+                <p class="site_T">Techizer@gmail.com</p>
+            </td>
+        </tr>
+    </table>
+    <BR>
+    <img class= "logo_F" src="../t-zr-logos/tzr-logos.jpeg"  alt="Logo">
+	<small>Copyright &copy; 2021 Techizer Sdn Bhd</small>
+</footer>
+</body>
+</html>
